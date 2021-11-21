@@ -138,7 +138,7 @@ int main()
         return o1.wiek > o2.wiek;
     });
 
-    for (auto el : osoby) {
+    for (auto &el : osoby) {
         cout << el.imie << el.nazwisko << el.wiek << endl;
     }
     return 0;
