@@ -105,7 +105,8 @@ void algorithms_intro()
 {
     //kopiowanie elementów z jednego kontenera do drugiego
     list<double> lista = {1.5, 5, 2.4, 1, 5};
-    vector<double> tab_vect;
+
+    vector<double> tab_vect(lista.begin(), lista.end());
     copy(lista.begin(), lista.end(), std::back_inserter(tab_vect));
 
     //sortowanie listy
